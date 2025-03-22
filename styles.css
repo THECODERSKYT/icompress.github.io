@@ -27,57 +27,13 @@ h1.neon-text {
     animation: text-glow 1.5s infinite alternate;
 }
 
-input.neon-input {
-    margin: 20px 0;
-    padding: 10px;
-    border: 2px solid #00ffff;
-    background: transparent;
-    color: #00ffff;
-    font-size: 1rem;
-    border-radius: 5px;
-    outline: none;
-    animation: input-glow 2s infinite alternate;
-}
-
-.slider-container {
-    margin: 20px 0;
-}
-
-.neon-slider {
-    width: 100%;
-    margin-top: 10px;
-    -webkit-appearance: none;
-    appearance: none;
-    height: 10px;
-    background: #00ffff;
-    outline: none;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #00ffff;
-}
-
-.neon-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background: #00ffff;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #00ffff;
-}
-
-img.neon-image {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #00ffff;
-    border-radius: 10px;
+.buttons {
     margin-top: 20px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
 }
 
-a.download-link.neon-button {
-    display: none;
-    margin-top: 20px;
+.neon-button {
+    display: block;
+    margin: 10px auto;
     padding: 10px 20px;
     background: #00ffff;
     color: #0f0f0f;
@@ -88,10 +44,23 @@ a.download-link.neon-button {
     transition: all 0.3s ease;
 }
 
-a.download-link.neon-button:hover {
+.neon-button:hover {
     background: #0f0f0f;
     color: #00ffff;
     box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+}
+
+.coming-soon {
+    position: relative;
+    background: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    animation: coming-soon-glow 2s infinite alternate;
+}
+
+.coming-soon:hover {
+    background: #0f0f0f;
+    color: #ff00ff;
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
 }
 
 footer.neon-footer {
@@ -122,13 +91,11 @@ footer.neon-footer {
     }
 }
 
-@keyframes input-glow {
+@keyframes coming-soon-glow {
     0% {
-        border-color: #00ffff;
-        box-shadow: 0 0 10px #00ffff;
+        box-shadow: 0 0 10px #ff00ff;
     }
     100% {
-        border-color: #00ffaa;
-        box-shadow: 0 0 20px #00ffaa;
+        box-shadow: 0 0 30px #ff00ff;
     }
 }
