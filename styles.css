@@ -1,0 +1,134 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    animation: glow 2s infinite alternate;
+}
+
+h1.neon-text {
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+    animation: text-glow 1.5s infinite alternate;
+}
+
+input.neon-input {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #00ffff;
+    background: transparent;
+    color: #00ffff;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    animation: input-glow 2s infinite alternate;
+}
+
+.slider-container {
+    margin: 20px 0;
+}
+
+.neon-slider {
+    width: 100%;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: #00ffff;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.neon-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #00ffff;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+img.neon-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+a.download-link.neon-button {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00ffff;
+    color: #0f0f0f;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    transition: all 0.3s ease;
+}
+
+a.download-link.neon-button:hover {
+    background: #0f0f0f;
+    color: #00ffff;
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+}
+
+footer.neon-footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.9);
+    }
+}
+
+@keyframes text-glow {
+    0% {
+        text-shadow: 0 0 10px #00ffff;
+    }
+    100% {
+        text-shadow: 0 0 30px #00ffff;
+    }
+}
+
+@keyframes input-glow {
+    0% {
+        border-color: #00ffff;
+        box-shadow: 0 0 10px #00ffff;
+    }
+    100% {
+        border-color: #00ffaa;
+        box-shadow: 0 0 20px #00ffaa;
+    }
+}
